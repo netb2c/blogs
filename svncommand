@@ -1,0 +1,20 @@
+1、Add Remote Folder
+svn checkout path(server path)
+e.g: svn checkout https://10.158.22.26/sdk/svn
+Alias: svn co
+
+2、Add new file to server.
+svn add file
+e.g: svn add *.py
+
+3、Commit to server
+svn commit -m "Add code file."
+Aliase: svn ci
+
+4、lock\unlock
+svn lock -m "Lockmessage." [--force] file
+e.g:svn lock -m "lock test file." test.py
+svn unlock file
+
+5、check status
+svn status path
